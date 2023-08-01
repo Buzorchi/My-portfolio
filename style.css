@@ -1,0 +1,100 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:ital,wght@0,300;0,400;0,700;1,300&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", "sans-serif"; 
+}
+
+.masthead{
+    background-color: #1abc9c;
+}
+.bg-nav{
+    background-color:#2c3e50 ;
+}
+
+.masthead-avatar{
+    width: 240px;
+}
+
+.masthead-heading{
+    font-size: 4rem;
+    line-height: 3.5rem;
+}
+
+.masthead-subheading{
+    font-size: 1.5rem;
+    padding-bottom: 4rem;
+}
+
+.page-section-heading{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    font-size: 3rem;
+    line-height: 2.5rem;
+    font-weight: 700;
+}
+
+.contact-me{
+    color: #2c3e50 ;
+    font-size: 3rem;
+    line-height: 2.5rem;
+    font-weight: 700;
+}
+.about-section{
+    background-color: #1abc9c;
+    margin-top: 5rem;
+}
+
+.btn-xl{
+    padding: 1rem 1.75rem;
+    font-size: 1.25rem;
+    margin-bottom: 5rem;
+}
+
+.btn-send{
+    background-color:#1abc9c ;
+}
+
+footer{
+    background-color:#2c3e50 ;
+    width: 100%;
+    height: 300px;
+}
+
+.link{
+    color: #1abc9c;
+
+}
+
+.form-control{
+    border-top-style: none;
+    border-bottom-style: solid;
+    border-left-style: none;
+    border-right-style: none;
+}
+
+h4{
+    font-weight: 700;
+}
+
+.lead{
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+.btn-social{
+    border-radius: 100%;
+    display: inline-flex;
+    width: 3rem;
+    height: 3rem;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-header:hover{
+    color: #1abc9c;
+}
+
