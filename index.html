@@ -1,170 +1,567 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+
+<body data-bs-spy="scroll" data-bs-target="#nav-element">
     <!-- navigation -->
-    <nav class="navbar navbar-expand-lg bg-nav fixed-top">
+    <nav class="navbar navbar-expand-lg bg-nav fixed-top" id="nav-element">
         <div class="container">
-          <a class="navbar-brand text-light fw-bold fs-3" href="#">MARY MUOGHALU</a>
-          <button class="navbar-toggler font-weight-bold bg-primary text-white rounded collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item mx-0 mx-lg-1">
-                <a class="nav-link active py-3 px-0 px-lg-3 fw-bold rounded text-light " href="#">PORTFOLIO</a>
-              </li>
-              <li class="nav-item mx-0 mx-lg-1">
-                <a class="nav-link py-3 px-0 px-lg-3 fw-bold rounded text-light" href="#">ABOUT</a>
-              </li>
-              <li class="nav-item mx-0 mx-lg-1">
-                <a class="nav-link py-3 px-0 px-lg-3 text-light fw-bold" href="#">CONTACT</a>
-              </li>
-          </div>
-        </div>
-      </nav>
-         <!-- heeader section -->
-      <header class="masthead text-white text-center">
-        <div class="container d-flex align-items-center flex-column">
-            <img class="masthead-avatar mb-5 mt-5 pt-5" src="./images/avartar.png" alt="..." />
-            <h1 class="masthead-heading text-uppercase pmb-0 fw-bold">mary muoghalu</h1> 
-            
-                
-                    <img src="./images/star.png" alt="star" style="width: 30px;">
-                
+            <a class="navbar-brand text-light fw-bolder" id="logo" href="#mary">MARY MUOGHALU</a>
+            <button class="navbar-toggler btn-menu text-white rounded collapsed" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                MENU
+                <svg height="0.7rem" class="svg-inline--fa fa-bars" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"></path></svg>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item mx-0 mx-lg-1">
+                        <a class="nav-link  px-0 px-lg-3 fw-bold rounded nav-text " href="#portfolio">PORTFOLIO</a>
+                    </li>
+                    <li class="nav-item mx-0 mx-lg-1">
+                        <a class="nav-link  px-0 px-lg-3 fw-bold rounded nav-text" href="#about">ABOUT</a>
+                    </li>
+                    <li class="nav-item mx-0 mx-lg-1">
+                        <a class="nav-link  px-0 px-lg-3 fw-bold nav-text" href="#contact">CONTACT</a>
+                    </li>
             </div>
-                 
-          
-           
-        
-            <p class="masthead-subheading font-weight-light pt-4">Graphic Artist - Web Designer - Illustrator</p>
+        </div>
+    </nav>
+    <!-- heeader section -->
+    <header class="masthead text-white text-center">
+        <div class="flex-box">
+            <div class="container d-flex align-items-center flex-column">
+                <img class="masthead-avatar" src="./images/avartar.png" alt="my-photo" />
+                <h1 class="masthead-heading text-uppercase pmb-0 fw-bolder">mary muoghalu</h1>
+                <div class="d-flex align-items-center justify-content-center pb-4 pt-4">
+                    <div class="line bg-light mx-3"></div>
+                    <div>
+                        <svg height="1.5rem" class="svg-inline--fa fa-star" aria-hidden="true" focusable="false"
+                            data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 576 512" data-fa-i2svg="">
+                            <path fill="currentColor"
+                                d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="line bg-light mx-3"></div>
+                </div>
+            </div>
+            <p class="masthead-subheading font-weight-light">Frontend Developer</p>
         </div>
     </header>
     <!-- about-seection -->
-    <section class="page-section portfolio">
+    <section class="page-section portfolio" id="portfolio">
         <div class="container ">
-            <h2 class="page-section-heading text-center text-uppercase  ">Portfolio</h2>
+            <h2 class="page-section-heading text-center text-uppercase fw-bolder">Portfolio</h2>
+            <div class="d-flex align-items-center justify-content-center pb-5 pt-1">
+                <div class="line bg-dark mx-3"></div>
+                <div>
+                    <svg height="2rem" class="svg-inline--fa fa-star" aria-hidden="true" focusable="false"
+                        data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 576 512" data-fa-i2svg="">
+                        <path fill="currentColor"
+                            d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z">
+                        </path>
+                    </svg>
+                </div>
+                <div class="line bg-dark mx-3"></div>
+            </div>
+        <!-- cabin image    -->
             <div class="row justify-content-center">
                 <div class="col-md-6 col-lg-4 mb-5">
-                    <div class="portfolio-item mx-auto">
+                    <div class="portfolio-item mx-auto"  data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+                        <div class="portfolio-item-caption-content text-center text-white rounded"><svg
+                                class="svg-inline--fa fa-plus fa-3x" height="5rem" aria-hidden="true" focusable="false"
+                                data-prefix="fas" data-icon="plus" role="img" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 448 512" data-fa-i2svg="">
+                                <path fill="currentColor"
+                                    d="M240 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H32c-17.7 0-32 14.3-32 32s14.3 32 32 32H176V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H384c17.7 0 32-14.3 32-32s-14.3-32-32-32H240V80z">
+                                </path>
+                            </svg><!-- <i class="fas fa-plus fa-3x"></i> Font Awesome fontawesome.com --></div>
                         <img class="img-fluid rounded" src="./images/cabin.png" alt="cabin" />
                     </div>
                 </div>
+<!-- Cake Image -->
                 <div class="col-md-6 col-lg-4 mb-5">
-                    <div class="portfolio-item mx-auto">
-                        <img class="img-fluid rounded" src="./images/cake.png" alt="cake" />
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
+                        <div class="portfolio-item-caption-content text-center text-white rounded"><svg
+                                class="svg-inline--fa fa-plus fa-3x" height="5rem" aria-hidden="true" focusable="false"
+                                data-prefix="fas" data-icon="plus" role="img" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 448 512" data-fa-i2svg="">
+                                <path fill="currentColor"
+                                    d="M240 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H32c-17.7 0-32 14.3-32 32s14.3 32 32 32H176V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H384c17.7 0 32-14.3 32-32s-14.3-32-32-32H240V80z">
+                                </path>
+                            </svg><!-- <i class="fas fa-plus fa-3x"></i> Font Awesome fontawesome.com -->
+                        </div>
+                        <img class="img-fluid rounded cake" src="./images/cake.png" alt="cake" />
                     </div>
                 </div>
+<!-- Circus image -->
                 <div class="col-md-6 col-lg-4 mb-5">
-                    <div class="portfolio-item mx-auto">
-                        <img class="img-fluid rounded" src="./images/circus.png" alt="circus" />
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
+                        <div class="portfolio-item-caption-content text-center text-white rounded"><svg
+                                class="svg-inline--fa fa-plus fa-3x" height="5rem" aria-hidden="true" focusable="false"
+                                data-prefix="fas" data-icon="plus" role="img" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 448 512" data-fa-i2svg="">
+                                <path fill="currentColor"
+                                    d="M240 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H32c-17.7 0-32 14.3-32 32s14.3 32 32 32H176V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H384c17.7 0 32-14.3 32-32s-14.3-32-32-32H240V80z">
+                                </path>
+                            </svg><!-- <i class="fas fa-plus fa-3x"></i> Font Awesome fontawesome.com -->
+                        </div>
+                        <img class="img-fluid rounded circus" src="./images/circus.png" alt="circus" />
                     </div>
                 </div>
+<!-- game image -->
                 <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
-                    <div class="portfolio-item mx-auto">
-                        <img class="img-fluid rounded" src="./images/game.png" alt="game" />
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
+                        <div class="portfolio-item-caption-content text-center text-white rounded"><svg
+                                class="svg-inline--fa fa-plus fa-3x" height="5rem" aria-hidden="true" focusable="false"
+                                data-prefix="fas" data-icon="plus" role="img" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 448 512" data-fa-i2svg="">
+                                <path fill="currentColor"
+                                    d="M240 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H32c-17.7 0-32 14.3-32 32s14.3 32 32 32H176V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H384c17.7 0 32-14.3 32-32s-14.3-32-32-32H240V80z">
+                                </path>
+                            </svg><!-- <i class="fas fa-plus fa-3x"></i> Font Awesome fontawesome.com -->
+                        </div>
+                        <img class="img-fluid rounded game" src="./images/game.png" alt="game" />
                     </div>
                 </div>
+<!-- safe -->
                 <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
-                    <div class="portfolio-item mx-auto">
-                        <img class="img-fluid rounded" src="./images/safe.png" alt="safe" />
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
+                        <div class="portfolio-item-caption-content text-center text-white rounded"><svg
+                                class="svg-inline--fa fa-plus fa-3x" height="5rem" aria-hidden="true" focusable="false"
+                                data-prefix="fas" data-icon="plus" role="img" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 448 512" data-fa-i2svg="">
+                                <path fill="currentColor"
+                                    d="M240 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H32c-17.7 0-32 14.3-32 32s14.3 32 32 32H176V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H384c17.7 0 32-14.3 32-32s-14.3-32-32-32H240V80z">
+                                </path>
+                            </svg><!-- <i class="fas fa-plus fa-3x"></i> Font Awesome fontawesome.com -->
+                        </div>
+                        <img class="img-fluid rounded safe" src="./images/safe.png" alt="safe" />
                     </div>
                 </div>
+<!-- submarine image -->
                 <div class="col-md-6 col-lg-4">
-                    <div class="portfolio-item mx-auto">
-                        <img class="img-fluid rounded" src="./images/submarine.png" alt="..." />
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal6">
+                        <div class="portfolio-item-caption-content text-center text-white rounded"><svg
+                                class="svg-inline--fa fa-plus fa-3x" height="5rem" aria-hidden="true" focusable="false"
+                                data-prefix="fas" data-icon="plus" role="img" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 448 512" data-fa-i2svg="">
+                                <path fill="currentColor"
+                                    d="M240 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H32c-17.7 0-32 14.3-32 32s14.3 32 32 32H176V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H384c17.7 0 32-14.3 32-32s-14.3-32-32-32H240V80z">
+                                </path>
+                            </svg><!-- <i class="fas fa-plus fa-3x"></i> Font Awesome fontawesome.com -->
+                        </div>
+                        <img class="img-fluid rounded submarine" src="./images/submarine.png" alt="submarine" />
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- About Section-->
-    <section class="page-section about-section text-white mb-0">
+    <section class="page-section about-section text-white mb-0 " id="about">
         <div class="container">
-            <h2 class="page-section-heading text-center text-uppercase text-white fw-bold ">About</h2>
+            <h2 class="page-section-heading text-center text-uppercase text-white fw-bolder ">About</h2>
+            <div class="d-flex align-items-center justify-content-center pb-5 pt-4">
+                <div class="line bg-light mx-3"></div>
+                <div>
+                    <svg height="1.5rem" class="svg-inline--fa fa-star" aria-hidden="true" focusable="false"
+                        data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 576 512" data-fa-i2svg="">
+                        <path fill="currentColor"
+                            d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z">
+                        </path>
+                    </svg>
+                </div>
+                <div class="line bg-light mx-3"></div>
+            </div>
             <div class="row">
-                <div class="col-lg-4 ms-auto"><p class="lead fw-semibold">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.</p></div>
-                <div class="col-lg-4 me-auto"><p class="lead fw-semibold">You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!</p></div>
+                <div class="col-lg-4 ms-auto">
+                    <p class="lead ">Freelancer is a free bootstrap theme created by Start Bootstrap. The download
+                        includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS
+                        stylesheets for easy customization.</p>
+                </div>
+                <div class="col-lg-4 me-auto">
+                    <p class="lead lead-1">You can create your own custom avatar for the masthead, change the icon in
+                        the dividers, and add your email address to the contact form to make it fully functional!</p>
+                </div>
             </div>
             <div class="text-center mt-4">
                 <a class="btn btn-xl btn-outline-light" href="https://startbootstrap.com/theme/freelancer/">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V274.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V416c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zm368 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"/></svg>
+                    <svg height="1em" class="download-icon" aria-hidden="true" focusable="false" data-prefix="fas"
+                        data-icon="download" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                        data-fa-i2svg="">
+                        <path fill="currentColor"
+                            d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V274.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V416c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zm368 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z">
+                        </path>
+                    </svg>
                     Free Download!
                 </a>
             </div>
         </div>
     </section>
 
-<!-- Contact Section-->
-<section class="page-section">
-    <div class="container">
-        <h2 class="page-section-heading text-center text-uppercase mb-0 contact-me">Contact Me</h2>
-        <div class="row justify-content-center">
-            <div class="col-lg-8 col-xl-7">
-    
-                <form>
-                    <div class="form-floating mb-3 ">
-                        <input type="text" class="form-control" placeholder="Enter your name">
-                        <label for="name">Full name</label>
-                      </div>
-                    <div class="form-floating mb-3">
-                        <input type="email" class="form-control" placeholder="name@example.com">
-                        <label for="floatingInput">Email address</label>
-                      </div>
-                      <div class="form-floating mb-3">
-                        <input type="tel" class="form-control" placeholder="+234 82911739">
-                        <label for="floatingPassword">Phone number</label>
-                      </div>
-                      
-                    <div class="form-floating mb-3">
-                        <textarea class="form-control" type="text" placeholder="Enter your message here..." style="height: 10rem" ></textarea>
-                        <label for="message">Message</label>
+    <!-- Contact Section-->
+    <section class="page-section" id="contact">
+        <div class="container">
+            <h2 class="page-section-heading text-center text-uppercase contact-me fw-bolder">Contact Me</h2>
+            <div class="d-flex align-items-center justify-content-center pb-5 pt-3">
+                <div class="line bg-dark mx-3"></div>
+                <div>
+                    <svg height="2rem" class="svg-inline--fa fa-star" aria-hidden="true" focusable="false"
+                        data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 576 512" data-fa-i2svg="">
+                        <path fill="currentColor"
+                            d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z">
+                        </path>
+                    </svg>
+                </div>
+                <div class="line bg-dark mx-3"></div>
+            </div>
+
+            <!-- form section -->
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-xl-7">
+                    <form>
+                        <div class="form-floating mb-3 ">
+                            <input type="text" class="form-control" placeholder="Enter your name">
+                            <label for="name">Full name</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" placeholder="name@example.com">
+                            <label for="floatingInput">Email address</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="tel" class="form-control" placeholder="+234 82911739">
+                            <label for="floatingPassword">Phone number</label>
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <textarea class="form-control" type="text" placeholder="Enter your message here..."
+                                style="height: 10rem"></textarea>
+                            <label for="message">Message</label>
+                        </div>
+                        <button class="btn btn-send btn-xl text-light" type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer-->
+    <footer class="footer text-center">
+        <div class="container">
+            <div class="row text-light">
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <h4 class="text-uppercase mb-4 fw-bold">Location</h4>
+                    <p class="lead mb-0 fw-normal">
+                        24 Duro Oyedoyin street
+                        <br />
+                        Lagos, Nigeria
+                    </p>
+                </div>
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <h4 class="text-uppercase mb-4 fw-bold">Around the Web</h4>
+                    <a class="btn btn-outline-light btn-social mx-1 rounded-circle"
+                        href="https://web.facebook.com/muoghalu.zita" target="_blank"><svg height="1em"
+                            class="svg-inline--fa fa-facebook-f fa-fw" aria-hidden="true" focusable="false"
+                            data-prefix="fab" data-icon="facebook-f" role="img" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 320 512" data-fa-i2svg="">
+                            <path fill="currentColor"
+                                d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z">
+                            </path>
+                        </svg></a>
+                    <a class="btn btn-outline-light btn-social mx-1 rounded-circle" href=""><svg height="1em"
+                            class="svg-inline--fa fa-twitter fa-fw" aria-hidden="true" focusable="false"
+                            data-prefix="fab" data-icon="twitter" role="img" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512" data-fa-i2svg="">
+                            <path fill="currentColor"
+                                d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z">
+                            </path>
+                        </svg></a>
+                    <a class="btn btn-outline-light btn-social mx-1 rounded-circle"
+                        href="https://www.linkedin.com/in/muoghalu-mary-b4158a236/" target="_blank"><svg height="1em"
+                            class="svg-inline--fa fa-linkedin-in fa-fw" aria-hidden="true" focusable="false"
+                            data-prefix="fab" data-icon="linkedin-in" role="img" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 448 512" data-fa-i2svg="">
+                            <path fill="currentColor"
+                                d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z">
+                            </path>
+                        </svg></a>
+                    <a class="btn btn-outline-light btn-social mx-1 rounded-circle" href=""><svg height="1em"
+                            class="svg-inline--fa fa-dribbble fa-fw" aria-hidden="true" focusable="false"
+                            data-prefix="fab" data-icon="dribbble" role="img" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512" data-fa-i2svg="">
+                            <path fill="currentColor"
+                                d="M256 8C119.252 8 8 119.252 8 256s111.252 248 248 248 248-111.252 248-248S392.748 8 256 8zm163.97 114.366c29.503 36.046 47.369 81.957 47.835 131.955-6.984-1.477-77.018-15.682-147.502-6.818-5.752-14.041-11.181-26.393-18.617-41.614 78.321-31.977 113.818-77.482 118.284-83.523zM396.421 97.87c-3.81 5.427-35.697 48.286-111.021 76.519-34.712-63.776-73.185-116.168-79.04-124.008 67.176-16.193 137.966 1.27 190.061 47.489zm-230.48-33.25c5.585 7.659 43.438 60.116 78.537 122.509-99.087 26.313-186.36 25.934-195.834 25.809C62.38 147.205 106.678 92.573 165.941 64.62zM44.17 256.323c0-2.166.043-4.322.108-6.473 9.268.19 111.92 1.513 217.706-30.146 6.064 11.868 11.857 23.915 17.174 35.949-76.599 21.575-146.194 83.527-180.531 142.306C64.794 360.405 44.17 310.73 44.17 256.323zm81.807 167.113c22.127-45.233 82.178-103.622 167.579-132.756 29.74 77.283 42.039 142.053 45.189 160.638-68.112 29.013-150.015 21.053-212.768-27.882zm248.38 8.489c-2.171-12.886-13.446-74.897-41.152-151.033 66.38-10.626 124.7 6.768 131.947 9.055-9.442 58.941-43.273 109.844-90.795 141.978z">
+                            </path>
+                        </svg></a>
+                </div>
+                <div class="col-lg-4">
+                    <h4 class="text-uppercase mb-4 fw-bold">About Freelancer</h4>
+                    <p class="lead mb-0 fw-normal">
+                            Freelance is a free to use, MIT licensed Bootstrap theme created by
+                        <a href="http://startbootstrap.com" class="link-boostrap">Start Bootstrap</a>
+                        .
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Copyright Section-->
+    <div class="copyright py-4 text-center text-white bg-dark">
+        <div class="container"><small>Copyright &copy; Your Website 2023</small></div>
+    </div>
+
+  <!-- Portfolio Modal -->
+  <!-- Modal 1 -->
+  <div class=" modal fade " id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModalLabel1" aria-hidden="true">
+    <div class="modal-dialog modal-xl align-items-center justify-content-center">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+            <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h2 class="portfolio-modal-title text-uppercase mb-0 fw-bolder">Log Cabin</h2>
+                    <div class="d-flex align-items-center justify-content-center pb-5 pt-1">
+                        <div class="line bg-dark mx-3"></div>
+                        <div>
+                            <svg height="2rem" class="svg-inline--fa fa-star" aria-hidden="true" focusable="false"
+                                data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 576 512" data-fa-i2svg="">
+                                <path fill="currentColor"
+                                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="line bg-dark mx-3"></div>
                     </div>
-                    <button class="btn btn-send btn-xl text-light" type="submit">Send</button>
-                </form>
+                    <img class="img-fluid rounded" src="./images/cabin.png" alt="cabin" />
+                    <p class="my-4 ">Explore the world as a frontend developer</p>
+                    <button type="button" class="btn-portfolio-close p-2" data-bs-dismiss="modal">
+                        <svg height="1rem" class="svg-inline--fa fa-xmark fa-fw " aria-hidden="true" focusable="false" data-prefix="fas" data-icon="xmark" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z"></path></svg>
+                        Close Window
+                    </div>
+                    </button> 
+                </div>  
             </div>
         </div>
+      </div>
     </div>
-</section>
-<!-- Footer-->
-<footer class="footer text-center">
-    <div class="footer-container  text-white px-5 py-5">
-        <div class="row">
-            <div class="col-lg-4 mb-5 mb-lg-0">
-                <h4 class="text-uppercase mb-4">Location</h4>
-                <p class="lead mb-0">
-                    24 Duro Oyedoyin street
-                    <br />
-                    Lagos, Nigeria
-                </p>
-            </div>
-            <div class="col-lg-4 mb-5 mb-lg-0">
-                <h4 class="text-uppercase mb-4 ">Around the Web</h4>
-                <a class="btn btn-outline-light btn-social mx-1 rounded-circle" href="https://web.facebook.com/muoghalu.zita" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg></a>
-                <a class="btn btn-outline-light btn-social mx-1 rounded-circle" href=""><svg class="text-light"xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg></a>
-                <a class="btn btn-outline-light btn-social mx-1 rounded-circle" href="https://www.linkedin.com/in/muoghalu-mary-b4158a236/" target="_blank"><svg class="text-white"xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg></a>
-                <a class="btn btn-outline-light btn-social mx-1 rounded-circle" href=""><svg class="text-white"xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M86.6 64l85.2 85.2C194.5 121.7 208 86.4 208 48c0-14.7-2-28.9-5.7-42.4C158.6 15 119 35.5 86.6 64zM64 86.6C35.5 119 15 158.6 5.6 202.3C19.1 206 33.3 208 48 208c38.4 0 73.7-13.5 101.3-36.1L64 86.6zM256 0c-7.3 0-14.6 .3-21.8 .9C238 16 240 31.8 240 48c0 47.3-17.1 90.5-45.4 124L256 233.4 425.4 64C380.2 24.2 320.9 0 256 0zM48 240c-16.2 0-32-2-47.1-5.8C.3 241.4 0 248.7 0 256c0 64.9 24.2 124.2 64 169.4L233.4 256 172 194.6C138.5 222.9 95.3 240 48 240zm463.1 37.8c.6-7.2 .9-14.5 .9-21.8c0-64.9-24.2-124.2-64-169.4L278.6 256 340 317.4c33.4-28.3 76.7-45.4 124-45.4c16.2 0 32 2 47.1 5.8zm-4.7 31.9C492.9 306 478.7 304 464 304c-38.4 0-73.7 13.5-101.3 36.1L448 425.4c28.5-32.3 49.1-71.9 58.4-115.7zM340.1 362.7C317.5 390.3 304 425.6 304 464c0 14.7 2 28.9 5.7 42.4C353.4 497 393 476.5 425.4 448l-85.2-85.2zM317.4 340L256 278.6 86.6 448c45.1 39.8 104.4 64 169.4 64c7.3 0 14.6-.3 21.8-.9C274 496 272 480.2 272 464c0-47.3 17.1-90.5 45.4-124z"/></svg></a>
-            </div>
-            <div class="col-lg-4">
-                <h4 class="text-uppercase mb-4">About Freelancer</h4>
-                <p class="lead mb-0">
-                    Freelance is a free to use, MIT licensed Bootstrap theme created by
-                    <a href="http://startbootstrap.com" class="link" >Start Bootstrap</a>
-                </p>
+  </div>
+
+  <!-- Modal 2 -->
+  <div class=" modal fade " id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModalLabel2" aria-hidden="true">
+    <div class="modal-dialog modal-xl align-items-center justify-content-center">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+            <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h2 class="portfolio-modal-title text-uppercase mb-0 fw-bolder">Tasty Cake</h2>
+                    <div class="d-flex align-items-center justify-content-center pb-5 pt-1">
+                        <div class="line bg-dark mx-3"></div>
+                        <div>
+                            <svg height="2rem" class="svg-inline--fa fa-star" aria-hidden="true" focusable="false"
+                                data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 576 512" data-fa-i2svg="">
+                                <path fill="currentColor"
+                                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="line bg-dark mx-3"></div>
+                    </div>
+                    <img class="img-fluid rounded" src="./images/cake.png" alt="cabin" />
+                    <p class="my-4 ">Explore the world as a frontend developer</p>
+                    <button type="button" class="btn-portfolio-close p-2" data-bs-dismiss="modal">
+                        <svg height="1rem" class="svg-inline--fa fa-xmark fa-fw " aria-hidden="true" focusable="false" data-prefix="fas" data-icon="xmark" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z"></path></svg>
+                        Close Window
+                    </div>
+                    </button> 
+                </div>  
             </div>
         </div>
+      </div>
     </div>
-</footer>
-<!-- Copyright Section-->
-<div class="copyright py-4 text-center text-white bg-dark">
-    <div class="container"><small>Copyright &copy; Your Website 2023</small></div>
-</div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </div>
+
+<!-- modal 3 -->
+<div class=" modal fade " id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModalLabel3" aria-hidden="true">
+    <div class="modal-dialog modal-xl align-items-center justify-content-center">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+            <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h2 class="portfolio-modal-title text-uppercase mb-0 fw-bolder">Circus Tent</h2>
+                    <div class="d-flex align-items-center justify-content-center pb-5 pt-1">
+                        <div class="line bg-dark mx-3"></div>
+                        <div>
+                            <svg height="2rem" class="svg-inline--fa fa-star" aria-hidden="true" focusable="false"
+                                data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 576 512" data-fa-i2svg="">
+                                <path fill="currentColor"
+                                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="line bg-dark mx-3"></div>
+                    </div>
+                    <img class="img-fluid rounded" src="./images/circus.png" alt="cabin" />
+                    <p class="my-4 ">Explore the world as a frontend developer</p>
+                    <button type="button" class="btn-portfolio-close p-2" data-bs-dismiss="modal">
+                        <svg height="1rem" class="svg-inline--fa fa-xmark fa-fw " aria-hidden="true" focusable="false" data-prefix="fas" data-icon="xmark" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z"></path></svg>
+                        Close Window
+                    </div>
+                    </button> 
+                </div>  
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- modal 4 -->
+  <div class=" modal fade " id="portfolioModal4" tabindex="-1" aria-labelledby="portfolioModalLabel4" aria-hidden="true">
+    <div class="modal-dialog modal-xl align-items-center justify-content-center">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+            <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h2 class="portfolio-modal-title text-uppercase mb-0 fw-bolder">Controller</h2>
+                    <div class="d-flex align-items-center justify-content-center pb-5 pt-1">
+                        <div class="line bg-dark mx-3"></div>
+                        <div>
+                            <svg height="2rem" class="svg-inline--fa fa-star" aria-hidden="true" focusable="false"
+                                data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 576 512" data-fa-i2svg="">
+                                <path fill="currentColor"
+                                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="line bg-dark mx-3"></div>
+                    </div>
+                    <img class="img-fluid rounded" src="./images/game.png" alt="cabin" />
+                    <p class="my-4 ">Explore the world as a frontend developer</p>
+                    <button type="button" class="btn-portfolio-close p-2" data-bs-dismiss="modal">
+                        <svg height="1rem" class="svg-inline--fa fa-xmark fa-fw " aria-hidden="true" focusable="false" data-prefix="fas" data-icon="xmark" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z"></path></svg>
+                        Close Window
+                    </div>
+                    </button> 
+                </div>  
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- modal 5 -->
+  <div class=" modal fade " id="portfolioModal5" tabindex="-1" aria-labelledby="portfolioModalLabel5" aria-hidden="true">
+    <div class="modal-dialog modal-xl align-items-center justify-content-center">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+            <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h2 class="portfolio-modal-title text-uppercase mb-0 fw-bolder">Locked Safe</h2>
+                    <div class="d-flex align-items-center justify-content-center pb-5 pt-1">
+                        <div class="line bg-dark mx-3"></div>
+                        <div>
+                            <svg height="2rem" class="svg-inline--fa fa-star" aria-hidden="true" focusable="false"
+                                data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 576 512" data-fa-i2svg="">
+                                <path fill="currentColor"
+                                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="line bg-dark mx-3"></div>
+                    </div>
+                    <img class="img-fluid rounded" src="./images/safe.png" alt="cabin" />
+                    <p class="my-4 ">Explore the world as a frontend developer</p>
+                    <button type="button" class="btn-portfolio-close p-2" data-bs-dismiss="modal">
+                        <svg height="1rem" class="svg-inline--fa fa-xmark fa-fw " aria-hidden="true" focusable="false" data-prefix="fas" data-icon="xmark" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z"></path></svg>
+                        Close Window
+                    </div>
+                    </button> 
+                </div>  
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- modal 6 -->
+  <div class=" modal fade " id="portfolioModal6" tabindex="-1" aria-labelledby="portfolioModalLabel6" aria-hidden="true">
+    <div class="modal-dialog modal-xl align-items-center justify-content-center">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+            <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h2 class="portfolio-modal-title text-uppercase mb-0 fw-bolder">Submarine</h2>
+                    <div class="d-flex align-items-center justify-content-center pb-5 pt-1">
+                        <div class="line bg-dark mx-3"></div>
+                        <div>
+                            <svg height="2rem" class="svg-inline--fa fa-star" aria-hidden="true" focusable="false"
+                                data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 576 512" data-fa-i2svg="">
+                                <path fill="currentColor"
+                                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="line bg-dark mx-3"></div>
+                    </div>
+                    <img class="img-fluid rounded" src="./images/submarine.png" alt="cabin" />
+                    <p class="my-4 ">Explore the world as a frontend developer</p>
+                    <button type="button" class="btn-portfolio-close p-2" data-bs-dismiss="modal">
+                        <svg height="1rem" class="svg-inline--fa fa-xmark fa-fw " aria-hidden="true" focusable="false" data-prefix="fas" data-icon="xmark" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z"></path></svg>
+                        Close Window
+                    </div>
+                    </button> 
+                </div>  
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+        
 </body>
+
 </html>
